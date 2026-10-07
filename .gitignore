@@ -1,0 +1,27 @@
+# Only code and documentation are tracked. Everything is ignored unless it is
+# listed below, so data, lookup tables, results and figures stay out of the
+# repository even when they sit next to the code.
+*
+!*/
+
+!/.gitignore
+!/LICENSE
+!/README.md
+
+# The pipeline and its benchmark suite
+!/NewImplementation/**/*.R
+!/NewImplementation/**/*.md
+
+# The thesis pipeline: the baseline of the benchmark
+!/ComplexoFinder/**/*.R
+
+# How the ProteoMaker datasets are generated and prepared
+!/Benchmark/02-DCF/00-MakeProteoMakerData.R
+!/Benchmark/02-DCF/01-DataProcessing.R
+
+# Results, also where they are Markdown or R files
+/NewImplementation/10-Results/
+/NewImplementation/Benchmark/results/
+/NewImplementation/00-Data/
+/ComplexoFinder/00-Data/
+/ComplexoFinder/10-Results/
